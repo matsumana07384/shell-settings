@@ -2,7 +2,6 @@ source ~/.bash_profile
 export PATH=/usr/local/bin:$PATH
 eval 'eval "$(direv hook bash)"'
 
-# 以下コピペ and カスタマイズ
 # 【参考】
 # https://qiita.com/ryutoyasugi/items/cb895814d4149ca44f12
 # https://qiita.com/iwaseasahi/items/a2b00b65ebd06785b443
