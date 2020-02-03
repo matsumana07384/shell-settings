@@ -1,0 +1,64 @@
+# for git
+
+alias g="git"
+alias l="lazygit"
+
+# -------------------------------------------------- #
+alias gcl="git clone"
+alias gpl="git pull"
+
+alias gb="git branch "
+alias gba="git branch -a"
+alias gbb="git branch -b"
+
+alias gs="git status"
+
+alias ga="git add "
+alias gcm="git commit -m"
+alias gcma="git commit --amend"
+
+alias gch="git checkout"
+alias gpre="git checkout @{-1}"
+alias gchm="git checkout master"
+
+alias gr="git remote -v"
+alias gp="git push"
+alias gpo="git push origin"
+alias gpfo="git push -f origin"
+
+alias gsas="git stash save"
+alias gsa="git stash apply stash@{0}"
+alias gst='git stash'
+alias gsp='git stash pop'
+alias gsp0= 'git stash pop stash@{0}'
+
+alias grem="git rebase -i master"
+alias grec="git rebase --continue"
+alias grea="git rebase --abort"
+
+# -------------------------------------------------- #
+
+# gitのブランチを表示して、インクリメンタルサーチでブランチを絞って切り替えるワンライナー
+function cb() {
+    git checkout `git branch | peco`
+}
+
+# git logのコミット番号をコピー
+function gl() {
+    git log | peco | awk '{print $2}' | pbcopy
+}
+
+# 特定のパス以下のディレクトリを一覧して選択、移動
+function jump() {
+    cd ~/Documents/map/git
+    cd `ls | peco`
+}
+
+function gl() {
+    git log | peco | awk '{print $2}' | pbcopy
+}
+
+# -------------------------------------------------- #
+
+alias pg="cat ~/Box\ Sync/memo/git.bash | peco | pbcopy"
+#alias pge="$(brew --prefix emacs)/bin/emacsclient -nw ~/Box\ Sync/memo/git.bash"
