@@ -4,6 +4,7 @@ export PATH=/usr/local/bin:$PATH
 
 # 環境変数
 export LANG=ja_JP.UTF-8
+
 # 日本語ファイル名を表示可能にする
 setopt print_eight_bit
 # ヒストリの設定
