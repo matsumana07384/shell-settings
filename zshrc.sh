@@ -1,6 +1,8 @@
-# source ~/.bash_profile
 export PATH=/usr/local/bin:$PATH
 #eval 'eval "$(direv hook bash)"'
+
+# ローカルの環境設定
+source  ~/shell-settings/local.sh
 
 # 環境変数
 export LANG=ja_JP.UTF-8
