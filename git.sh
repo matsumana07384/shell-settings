@@ -24,7 +24,6 @@ alias gchm="git checkout master"
 alias gr="git remote -v"
 alias gp="git push"
 alias gpo="git push origin"
-alias gpfo="git push -f origin"
 
 alias gsas="git stash save"
 alias gsa="git stash apply stash@{0}"
@@ -35,6 +34,9 @@ alias gsp0= 'git stash pop stash@{0}'
 alias grem="git rebase -i master"
 alias grec="git rebase --continue"
 alias grea="git rebase --abort"
+
+# マージ済みのローカルのブランチを削除
+alias gbdl = "git branch | xargs git branch -d"
 
 # -------------------------------------------------- #
 
