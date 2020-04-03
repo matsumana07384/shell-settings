@@ -2,3 +2,5 @@
 backup.sh
 # local setting file
 local.sh
+# MacOS
+.DS_Store
