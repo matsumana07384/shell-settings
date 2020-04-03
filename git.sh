@@ -36,7 +36,7 @@ alias grec="git rebase --continue"
 alias grea="git rebase --abort"
 
 # マージ済みのローカルのブランチを削除
-alias gbdl = "git branch | xargs git branch -d"
+alias gbdl="git branch | xargs git branch -d"
 
 # -------------------------------------------------- #
 
@@ -63,4 +63,4 @@ function gl() {
 # -------------------------------------------------- #
 
 alias pg="cat ~/Box\ Sync/memo/git.bash | peco | pbcopy"
-#alias pge="$(brew --prefix emacs)/bin/emacsclient -nw ~/Box\ Sync/memo/git.bash"
+
