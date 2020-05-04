@@ -32,6 +32,14 @@ sudo vi /etc/shells
 ```
 - 開いたファイルの一番下に`/usr/local/bin/zsh` を追加し、閉じる
 
+
+### .zshrc に設定
+
+```
+# setting
+. ~/shell-settings/init.sh
+```
+
 ## 各設定の際に参照したURL
 - [zshを使ってみる](https://qiita.com/ryutoyasugi/items/cb895814d4149ca44f12)
 - [初心者向け：Zshの導入](https://qiita.com/iwaseasahi/items/a2b00b65ebd06785b443)

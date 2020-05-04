@@ -59,3 +59,15 @@ ERROR=$'\U1F607 ' #INOCENT
 
 PROMPT='%(?.${DEFAULT}.${ERROR}) %F{green}%~%f %F{yellow}$%f '
 RPROMPT='${vcs_info_msg_0_}'
+
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall

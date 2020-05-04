@@ -29,7 +29,8 @@ alias gsas="git stash save"
 alias gsa="git stash apply stash@{0}"
 alias gst='git stash'
 alias gsp='git stash pop'
-alias gsp0= 'git stash pop stash@{0}'
+
+# alias gsp0= 'git stash pop stash@{0}'
 
 alias grem="git rebase -i master"
 alias grec="git rebase --continue"
@@ -63,4 +64,3 @@ function gl() {
 # -------------------------------------------------- #
 
 alias pg="cat ~/Box\ Sync/memo/git.bash | peco | pbcopy"
-
