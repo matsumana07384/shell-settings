@@ -1,43 +1,43 @@
 # for git
 
-alias g="git"
-alias l="lazygit"
+alias g='git'
+alias l='lazygit'
 
 # -------------------------------------------------- #
-alias gcl="git clone"
-alias gpl="git pull"
+alias gcl='git clone'
+alias gpl='git pull'
 
-alias gb="git branch "
-alias gba="git branch -a"
-alias gbb="git branch -b"
+alias gb='git branch '
+alias gba='git branch -a'
+alias gbb='git branch -b'
 
-alias gs="git status"
+alias gs='git status'
 
-alias ga="git add "
-alias gcm="git commit -m"
-alias gcma="git commit --amend"
+alias ga='git add '
+alias gcm='git commit -m'
+alias gcma='git commit --amend'
 
-alias gch="git checkout"
-alias gpre="git checkout @{-1}"
-alias gchm="git checkout master"
+alias gch='git checkout'
+alias gpre='git checkout @{-1}'
+alias gchm='git checkout master'
 
-alias gr="git remote -v"
-alias gp="git push"
-alias gpo="git push origin"
+alias gr='git remote -v'
+alias gp='git push'
+alias gpo='git push origin'
 
-alias gsas="git stash save"
-alias gsa="git stash apply stash@{0}"
+alias gsas='git stash save'
+alias gsa='git stash apply stash@{0}'
 alias gst='git stash'
 alias gsp='git stash pop'
 
 # alias gsp0= 'git stash pop stash@{0}'
 
-alias grem="git rebase -i master"
-alias grec="git rebase --continue"
-alias grea="git rebase --abort"
+alias grem='git rebase -i master'
+alias grec='git rebase --continue'
+alias grea='git rebase --abort'
 
 # マージ済みのローカルのブランチを削除
-alias gbdl="git branch | xargs git branch -d"
+alias gbdl='git branch | xargs git branch -d'
 
 # -------------------------------------------------- #
 
@@ -63,4 +63,4 @@ function gl() {
 
 # -------------------------------------------------- #
 
-alias pg="cat ~/Box\ Sync/memo/git.bash | peco | pbcopy"
+alias pg='cat ~/Box\ Sync/memo/git.bash | peco | pbcopy'
