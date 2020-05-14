@@ -9,7 +9,6 @@ alias gpl='git pull'
 
 alias gb='git branch '
 alias gba='git branch -a'
-alias gbb='git branch -b'
 
 alias gs='git status'
 
@@ -18,8 +17,9 @@ alias gcm='git commit -m'
 alias gcma='git commit --amend'
 
 alias gch='git checkout'
+alias gchb='git checkout -b'
 alias gpre='git checkout @{-1}'
-alias gchm='git checkout master'
+alias gchm='git checkout master && git pull'
 
 alias gr='git remote -v'
 alias gp='git push'
@@ -30,9 +30,8 @@ alias gsa='git stash apply stash@{0}'
 alias gst='git stash'
 alias gsp='git stash pop'
 
-# alias gsp0= 'git stash pop stash@{0}'
-
 alias grem='git rebase -i master'
+alias greh='git rebase -i HEAD~'
 alias grec='git rebase --continue'
 alias grea='git rebase --abort'
 
