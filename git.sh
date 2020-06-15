@@ -18,20 +18,22 @@ alias gcma='git commit --amend'
 
 alias gch='git checkout'
 alias gchb='git checkout -b'
-alias gpre='git checkout @{-1}'
 alias gchm='git checkout master && git pull'
+alias gchd='git checkout develop && git pull'
+
+alias gm='git merge'
 
 alias gr='git remote -v'
 alias gp='git push'
 alias gpo='git push origin'
 
-alias gsas='git stash save'
-alias gsa='git stash apply stash@{0}'
+alias gsts='git stash save'
+alias gsta='git stash apply stash@{0}'
 alias gst='git stash'
-alias gsp='git stash pop'
+alias gstp='git stash pop'
 
-alias grem='git rebase -i master'
-alias greh='git rebase -i HEAD~'
+alias grem='git rebase master'
+alias greh='git rebase -i HEAD'
 alias grec='git rebase --continue'
 alias grea='git rebase --abort'
 
