@@ -30,3 +30,6 @@
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Android Stuido](https://developer.android.com/)
   - adbコマンドをパスを設定する
+
+# npm
+npm install -g expo-cli
