@@ -32,7 +32,7 @@ alias gsta='git stash apply stash@{0}'
 alias gst='git stash'
 alias gstp='git stash pop'
 
-alias grem='git rebase master'
+alias grem='git rebase master --committer-date-is-author-date'
 alias greh='git rebase -i HEAD'
 alias grec='git rebase --continue'
 alias grea='git rebase --abort'
