@@ -6,6 +6,7 @@ alias l='lazygit'
 # -------------------------------------------------- #
 alias gcl='git clone'
 alias gpl='git pull'
+alias gf='git -c diff.mnemonicprefix=false -c core.quotepath=false --no-optional-locks fetch origin'
 
 alias gb='git branch '
 alias gba='git branch -a'
@@ -15,6 +16,7 @@ alias gs='git status'
 alias ga='git add '
 alias gcm='git commit -m'
 alias gcma='git commit --amend'
+
 
 alias gch='git checkout'
 alias gchb='git checkout -b'
