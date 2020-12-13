@@ -6,6 +6,7 @@
   - nodebrew install-binary latest
   - nodebrew use v14.1.0
 - brew install imagemagick
+- brew install nodenv
 
 # other
 - sudo easy_install pip
