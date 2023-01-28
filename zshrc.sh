@@ -76,3 +76,7 @@ bindkey -e
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+# タブのタイトルを変更
+# [iTerm2のタブのタイトルに現在いるディレクトリ名を表示する完全解説](https://applingo.tokyo/article/6453#toc1)
+function chpwd() { echo -ne "\033]0;$(pwd | rev | awk -F \/ '{print $1}'| rev)\007"}
