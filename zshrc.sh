@@ -80,3 +80,10 @@ compinit
 # タブのタイトルを変更
 # [iTerm2のタブのタイトルに現在いるディレクトリ名を表示する完全解説](https://applingo.tokyo/article/6453#toc1)
 function chpwd() { echo -ne "\033]0;$(pwd | rev | awk -F \/ '{print $1}'| rev)\007"}
+
+# bashを実行するための関数
+#[peco — Homebrew Formulae](https://formulae.brew.sh/formula/peco)
+function runsh() {
+    file=`ls ~/Workspace/git/notes/bash/ | peco`
+    bash "${HOME}/Workspace/git/notes/bash/${file}"
+}
