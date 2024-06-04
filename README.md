@@ -15,10 +15,10 @@
 
 ## zshのインストール
 
-### [Homebrew](https://brew.sh/index_ja) をインストール
+### [Homebrew](https://brew.sh/ja/) をインストール
 
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 ### Homebrew で zsh をインストール
 ```
