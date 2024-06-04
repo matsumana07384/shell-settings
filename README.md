@@ -20,6 +20,12 @@
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+#### 以下M3時にトラブった際のメモ
+
+
+https://qiita.com/Kinakonoko/items/0b125a1d267c3379961f
+https://qiita.com/TORAPPU/items/b2809083af3cf967d70f
+
 ### Homebrew で zsh をインストール
 ```
 brew install zsh
