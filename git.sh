@@ -10,13 +10,14 @@ alias gf='git -c diff.mnemonicprefix=false -c core.quotepath=false --no-optional
 
 alias gb='git branch '
 alias gba='git branch -a'
+alias gbD='git branch -D'
 
 alias gs='git status'
 
 alias ga='git add '
 alias gcm='git commit -m'
+alias gcam='git commit --allow-empty -m'
 alias gcma='git commit --amend'
-
 
 alias gch='git checkout'
 alias gchb='git checkout -b'
