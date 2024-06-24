@@ -1,4 +1,3 @@
-
 . ~/shell-settings/git.sh
 . ~/shell-settings/zshrc.sh
 . ~/shell-settings/alias.sh
