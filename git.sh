@@ -6,6 +6,7 @@ alias l='lazygit'
 # -------------------------------------------------- #
 alias gcl='git clone'
 alias gpl='git pull'
+alias gplm='git pull --no-edit origin master'
 alias gf='git -c diff.mnemonicprefix=false -c core.quotepath=false --no-optional-locks fetch origin'
 
 alias gb='git branch '
