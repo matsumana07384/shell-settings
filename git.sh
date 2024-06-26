@@ -47,7 +47,7 @@ alias gbdl='git branch | xargs git branch -d'
 # -------------------------------------------------- #
 
 # gitのブランチを表示して、インクリメンタルサーチでブランチを絞って切り替えるワンライナー
-function cb() {
+function sb() {
     git checkout `git branch | peco`
 }
 
