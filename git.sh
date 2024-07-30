@@ -25,7 +25,7 @@ alias gchb='git checkout -b'
 alias gchm='git checkout master && git pull'
 alias gchd='git checkout develop && git pull'
 
-alias gm='git merge'
+#alias gm='git merge'
 
 alias gr='git remote -v'
 alias gp='git push'
@@ -43,7 +43,7 @@ alias grec='git rebase --continue'
 alias grea='git rebase --abort'
 
 # マージ済みのローカルのブランチを削除
-alias gbdl='git branch | xargs git branch -d'
+alias gbdl='git branch | grep -Ev "master|main|develop|dev11" | xargs git branch -D'
 
 # -------------------------------------------------- #
 
@@ -59,14 +59,13 @@ function gl() {
 
 # 特定のパス以下のディレクトリを一覧して選択、移動
 function jump() {
-    cd ~/Documents/map/git
+    cd ~/Projects/
     cd `ls | peco`
 }
 
-function gl() {
-    git log | peco | awk '{print $2}' | pbcopy
+# gitのブランチを指定してマージする
+function gm() {
+    git merge `git branch | peco`
 }
 
 # -------------------------------------------------- #
-
-alias pg='cat ~/Box\ Sync/memo/git.bash | peco | pbcopy'
