@@ -25,7 +25,7 @@ alias gchb='git checkout -b'
 alias gchm='git checkout master && git pull'
 alias gchd='git checkout develop && git pull'
 
-#alias gm='git merge'
+alias gm='git merge'
 
 alias gr='git remote -v'
 alias gp='git push'
@@ -64,7 +64,7 @@ function jump() {
 }
 
 # gitのブランチを指定してマージする
-function gm() {
+function gmb() {
     git merge `git branch | peco`
 }
 
