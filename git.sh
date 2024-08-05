@@ -43,7 +43,7 @@ alias grec='git rebase --continue'
 alias grea='git rebase --abort'
 
 # マージ済みのローカルのブランチを削除
-alias gbdl='git branch | grep -Ev "master|main|develop|dev11" | xargs git branch -D'
+alias gbdl='git branch | grep -Ev "master|main|stg|develop|dev11" | xargs git branch -D'
 
 # -------------------------------------------------- #
 
@@ -66,6 +66,25 @@ function jump() {
 # gitのブランチを指定してマージする
 function gmb() {
     git merge `git branch | peco`
+}
+
+# https://qiita.com/keisukee/items/9b815e56a173a281f42f で参照
+# search a destination from cdr list
+function peco-get-destination-from-cdr() {
+  cdr -l | \
+  sed -e 's/^[[:digit:]]*[[:blank:]]*//' | \
+  peco --query "$LBUFFER"
+}
+
+### 過去に移動したことのあるディレクトリを選択
+function hd() {
+  local destination="$(peco-get-destination-from-cdr)"
+  if [ -n "$destination" ]; then
+    BUFFER="cd $destination"
+    zle accept-line
+  else
+    zle reset-prompt
+  fi
 }
 
 # -------------------------------------------------- #
