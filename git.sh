@@ -45,10 +45,13 @@ alias grea='git rebase --abort'
 # マージ済みのローカルのブランチを削除
 alias gbdl='git branch | grep -Ev "master|main|stg|develop|dev11" | xargs git branch -D'
 
+# githubのリモートブランチを取ってくる
+alias gchr='git checkout $(git branch -a --sort=-authordate | cut -b 3- | grep -v -- "->" | peco | sed -e "s%remotes/origin/%%")'
+
 # -------------------------------------------------- #
 
 # gitのブランチを表示して、インクリメンタルサーチでブランチを絞って切り替えるワンライナー
-function sb() {
+function gbl() {
     git checkout `git branch | peco`
 }
 
