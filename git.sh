@@ -51,7 +51,7 @@ alias gchr='git checkout $(git branch -a --sort=-authordate | cut -b 3- | grep -
 # -------------------------------------------------- #
 
 # gitのブランチを表示して、インクリメンタルサーチでブランチを絞って切り替えるワンライナー
-function gbl() {
+function gchl() {
     git checkout `git branch | peco`
 }
 
@@ -69,6 +69,11 @@ function jump() {
 # gitのブランチを指定してマージする
 function gmb() {
     git merge `git branch | peco`
+}
+
+# gitのブランチを指定してリベースする
+function grb() {
+    git rebase `git branch | peco`
 }
 
 # https://qiita.com/keisukee/items/9b815e56a173a281f42f で参照
