@@ -60,12 +60,6 @@ function gl() {
     git log | peco | awk '{print $2}' | pbcopy
 }
 
-# 特定のパス以下のディレクトリを一覧して選択、移動
-function jump() {
-    cd ~/Projects/
-    cd `ls | peco`
-}
-
 # gitのブランチを指定してマージする
 function gmb() {
     git merge `git branch | peco`
@@ -82,17 +76,6 @@ function peco-get-destination-from-cdr() {
   cdr -l | \
   sed -e 's/^[[:digit:]]*[[:blank:]]*//' | \
   peco --query "$LBUFFER"
-}
-
-### 過去に移動したことのあるディレクトリを選択
-function hd() {
-  local destination="$(peco-get-destination-from-cdr)"
-  if [ -n "$destination" ]; then
-    BUFFER="cd $destination"
-    zle accept-line
-  else
-    zle reset-prompt
-  fi
 }
 
 # -------------------------------------------------- #

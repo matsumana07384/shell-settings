@@ -87,3 +87,14 @@ function runsh() {
     file=`ls ~/Workspace/git/notes/bash/ | peco`
     bash "${HOME}/Workspace/git/notes/bash/${file}"
 }
+
+### 過去に移動したことのあるディレクトリを選択
+function hd() {
+  local destination="$(peco-get-destination-from-cdr)"
+  if [ -n "$destination" ]; then
+    BUFFER="cd $destination"
+    zle accept-line
+  else
+    zle reset-prompt
+  fi
+}
