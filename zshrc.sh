@@ -2,7 +2,7 @@ export PATH=/usr/local/bin:$PATH
 #eval 'eval "$(direv hook bash)"'
 
 # ローカルの環境設定
-source  ~/shell-settings/local.sh
+#source  ~/shell-settings/local.sh
 
 # 環境変数
 export LANG=ja_JP.UTF-8
@@ -23,12 +23,14 @@ setopt hist_ignore_all_dups
 # 同時に起動したzshの間でヒストリを共有
 setopt share_history
 
-# 補完機能を有効にする
-autoload -Uz compinit
-compinit -u
+# zshの関数パスを設定（補完機能より前に設定）
 if [ -e /usr/local/share/zsh-completions ]; then
   fpath=(/usr/local/share/zsh-completions $fpath)
 fi
+
+# 補完機能を有効にする
+autoload -Uz compinit
+compinit -u
 
 # 補完で小文字でも大文字にマッチさせる
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
@@ -73,8 +75,7 @@ bindkey -e
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-autoload -Uz compinit
-compinit
+# (moved to earlier in the file to avoid duplication)
 # End of lines added by compinstall
 
 # タブのタイトルを変更
