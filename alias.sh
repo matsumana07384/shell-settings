@@ -10,3 +10,5 @@ function dev() {
 function as() {
     cd ~/Projects/zozo-Front-PCSP/app-frontend/assets/
 }
+
+alias claude='claude --model claude-opus-4-6 --worktree'
