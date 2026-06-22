@@ -12,3 +12,23 @@ function as() {
 }
 
 alias claude='claude --model claude-opus-4-6 --worktree'
+
+# ディレクトリ移動
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# ls
+alias ll='ls -la'
+alias la='ls -A'
+
+# npm
+alias ni='npm install'
+alias nr='npm run'
+alias nrd='npm run dev'
+alias nrb='npm run build'
+
+# その他
+alias h='history'
+alias reload='source ~/.zshrc'
+alias ip='curl ifconfig.me'
