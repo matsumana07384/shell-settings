@@ -64,16 +64,7 @@ ERROR=$'\U1F607 ' #INOCENT
 PROMPT='%(?.${DEFAULT}.${ERROR}) %F{green}%~%f %F{yellow}$%f '
 RPROMPT='${vcs_info_msg_0_}'
 
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
 bindkey -e
-
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-# (moved to earlier in the file to avoid duplication)
-# End of lines added by compinstall
 
 # タブのタイトルを変更
 # [iTerm2のタブのタイトルに現在いるディレクトリ名を表示する完全解説](https://applingo.tokyo/article/6453#toc1)
