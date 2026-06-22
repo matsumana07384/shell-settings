@@ -4,3 +4,5 @@ backup.sh
 local.sh
 # MacOS
 .DS_Store
+# Claude Code
+.claude/
