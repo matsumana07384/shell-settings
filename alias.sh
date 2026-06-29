@@ -11,7 +11,8 @@ function as() {
     cd ~/Projects/zozo-Front-PCSP/app-frontend/assets/
 }
 
-alias claude='claude --model claude-opus-4-6 --worktree'
+alias cld='claude --model claude-opus-4-6'
+alias cldr='claude --model claude-opus-4-6 -r'
 
 # ディレクトリ移動
 alias ..='cd ..'
