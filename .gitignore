@@ -1,7 +1,7 @@
 # backupfile
 backup.sh
-# local setting file
-local.sh
+# office setting file
+office.sh
 # MacOS
 .DS_Store
 # Claude Code
