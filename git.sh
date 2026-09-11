@@ -50,9 +50,14 @@ alias gchr='git checkout $(git branch -a --sort=-authordate | cut -b 3- | grep -
 
 # -------------------------------------------------- #
 
-# gitのブランチを表示して、インクリメンタルサーチでブランチを絞って切り替えるワンライナー
+# ローカルブランチをインクリメンタルサーチで選択する共通関数
+function _select_branch() {
+    git branch | peco
+}
+
+# ブランチを選択して切り替える
 function gchl() {
-    git checkout `git branch | peco`
+    git checkout `_select_branch`
 }
 
 # git logのコミット番号をコピー
@@ -60,14 +65,14 @@ function gl() {
     git log | peco | awk '{print $2}' | pbcopy
 }
 
-# gitのブランチを指定してマージする
+# ブランチを選択してマージする
 function gmb() {
-    git merge `git branch | peco`
+    git merge `_select_branch`
 }
 
-# gitのブランチを指定してリベースする
+# ブランチを選択してリベースする
 function grb() {
-    git rebase `git branch | peco`
+    git rebase `_select_branch`
 }
 
 # https://qiita.com/keisukee/items/9b815e56a173a281f42f で参照
