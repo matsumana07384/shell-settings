@@ -1,10 +1,15 @@
-# setting-zsh
-- 個人的な zshellの設定ファイルです
+# shell-settings
+- 個人的な zsh の設定ファイルです
 
 ## ファイル構成
 - README.md：このファイル
-- git.sh:：git用の設定ファイル
-- zshrc.sh：git以外の設定ファイル
+- init.sh：エントリポイント（以下の設定ファイルを読み込む）
+- zshrc.sh：zsh 本体の設定（ヒストリ・補完・プロンプトなど）
+- git.sh：git 用のエイリアス・関数
+- alias.sh：git 以外のエイリアス・関数
+- local.sh：マシン固有の設定
+- office.sh：会社関連の設定（git 管理外）
+- install-memo.md：セットアップ時に入れたツールのメモ
 
 ## ファイルの設定
 - ~/.zshrc に下記を追記
@@ -37,14 +42,6 @@ brew install zsh
 sudo vi /etc/shells
 ```
 - 開いたファイルの一番下に`/usr/local/bin/zsh` を追加し、閉じる
-
-
-### .zshrc に設定
-
-```
-# setting
-. ~/shell-settings/init.sh
-```
 
 ## 各設定の際に参照したURL
 - [zshを使ってみる](https://qiita.com/ryutoyasugi/items/cb895814d4149ca44f12)
