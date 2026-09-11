@@ -75,12 +75,4 @@ function grb() {
     git rebase `_select_branch`
 }
 
-# https://qiita.com/keisukee/items/9b815e56a173a281f42f で参照
-# search a destination from cdr list
-function peco-get-destination-from-cdr() {
-  cdr -l | \
-  sed -e 's/^[[:digit:]]*[[:blank:]]*//' | \
-  peco --query "$LBUFFER"
-}
-
 # -------------------------------------------------- #
