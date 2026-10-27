@@ -7,7 +7,7 @@
 - zshrc.sh：zsh 本体の設定（ヒストリ・補完・プロンプトなど）
 - git.sh：git 用のエイリアス・関数
 - alias.sh：git 以外のエイリアス・関数
-- local.sh：マシン固有の設定
+- local.sh：マシン固有の設定（git 管理外）
 - office.sh：会社関連の設定（git 管理外）
 - install-memo.md：セットアップ時に入れたツールのメモ
 

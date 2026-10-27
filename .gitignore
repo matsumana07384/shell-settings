@@ -1,6 +1,7 @@
 # backupfile
 backup.sh
-# office setting file
+# machine / office specific files
+local.sh
 office.sh
 # MacOS
 .DS_Store
