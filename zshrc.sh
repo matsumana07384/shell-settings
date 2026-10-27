@@ -1,5 +1,3 @@
-export PATH=/usr/local/bin:$PATH
-
 # 環境変数
 export LANG=ja_JP.UTF-8
 
@@ -18,11 +16,6 @@ setopt hist_ignore_all_dups
 
 # 同時に起動したzshの間でヒストリを共有
 setopt share_history
-
-# zshの関数パスを設定（補完機能より前に設定）
-if [ -e /usr/local/share/zsh-completions ]; then
-  fpath=(/usr/local/share/zsh-completions $fpath)
-fi
 
 # 補完機能を有効にする
 autoload -Uz compinit
